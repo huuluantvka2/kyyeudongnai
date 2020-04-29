@@ -11,4 +11,9 @@ jQuery(document).ready(function($) {
 			$('.back-to-top').removeClass('appear');
 		}
 	});
+	$('.concept-layout-detail').hover(function() {
+		$(this).find('.icobox:first').addClass('appear');
+	}, function() {
+		$(this).find('.icobox:first').removeClass('appear');
+	});
 });

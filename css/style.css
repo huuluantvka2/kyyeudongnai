@@ -38,8 +38,8 @@ html,body{
 
 }
 .header-above img{
-	width:15%;
-	height:15%;
+	width:30%;
+	height:auto%;
 	margin:auto;
 	display: block;
 }
@@ -47,7 +47,7 @@ html,body{
 	font-weight: 600;
 	font-size: 22px;
 	color:black !important;
-	margin-right: 15px;
+	margin-right: 20px;
 	border-radius: 10px;
 	transition: 0.6s;
 }
@@ -128,6 +128,26 @@ div.concept-layout a{
 	color:yellow;
 	opacity: 0.8;
 }
+.card-album{
+	border:none !important;
+}
+.title-album{
+	font-size: 25px;
+	font-weight: 500;
+	color:black;
+	text-align: center;
+}
+.card-album img{
+	position: relative;
+}
+.card-album img::after{
+	content:'';
+	width:100%;
+	height: 100%;
+	background-color: grey;
+}
+.card-album:hover.card-album img{
+}
 /* end content */
 
 /* footer */
@@ -167,6 +187,17 @@ div.footer-icons>a:nth-child(4):hover{
 	width: 50%;
 	box-shadow: 0 0 15px pink;
 	margin-top:20px;
+}
+.footer-left h6{
+	color: white;
+}
+.footer-left a{
+	text-decoration: none;
+}
+.footer-left h6 a{
+	color:black;
+	font-size: 20px;
+	text-decoration: underline;
 }
 .title-footer{
 	font-size: 35px;
@@ -296,4 +327,55 @@ div.search-box{
 	position: fixed;
 	right:0;
 	bottom:200px;
+}
+.bell-contact{
+	font-size: 40px;
+	display: inline-block;
+	position: fixed;
+	bottom: 20px;
+	right:20px;
+	padding: 0 10px 0 10px;
+	border-radius: 1000px;
+	box-shadow:0 0 10px #2fc01fd4;
+	animation-name: message;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+.bell-contact i{
+	color:tomato;
+}
+.bell-contact i:hover{
+	color:orangered;
+}
+.container-fluid{
+	padding:0 !important;
+	overflow: hidden;
+}
+
+@-webkit-keyframes message {
+	0%{
+		box-shadow:0 0 10px #2fc01fd4;
+	}
+	100%{
+		box-shadow:0 0 20px #2fc01fd4;
+	}
+}
+/* responsive */
+@media only screen and (max-width:790px){
+	.header-above img{
+		width:70%;
+		height:200px;
+	}
+	.bell-contact{
+		font-size: 25px;
+		bottom:0;
+		right:0
+	}
+}
+@media only screen and (max-width:1118px){
+	.header-above img{
+		width:60%;
+		height:200px;
+	}
 }
