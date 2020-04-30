@@ -39,7 +39,7 @@ html,body{
 }
 .header-above img{
 	width:30%;
-	height:auto%;
+	height:auto;
 	margin:auto;
 	display: block;
 }
@@ -203,6 +203,17 @@ div.concept-layout a{
 	background-color: #DD4223;
 }
 .concept-layout-detail img{
+	width:100%;
+}
+.list-group-item {
+	border: none !important;
+}
+.list-group-item span{
+	background-color: purple;
+	padding:10px;
+	color:white;
+}
+.property-general-img{
 	width:100%;
 }
 /* end content */
@@ -422,7 +433,7 @@ div.search-box{
 @media only screen and (max-width:790px){
 	.header-above img{
 		width:70%;
-		height:200px;
+		height:200px !important;
 	}
 	.bell-contact{
 		font-size: 25px;
@@ -433,6 +444,6 @@ div.search-box{
 @media only screen and (max-width:1118px){
 	.header-above img{
 		width:60%;
-		height:200px;
+		height:250px;
 	}
 }
