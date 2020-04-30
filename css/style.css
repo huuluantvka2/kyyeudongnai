@@ -142,18 +142,68 @@ div.concept-layout a{
 	text-align: center;
 }
 .card-album img{
-	position: relative;
-}
-.card-album img::after{
-	content:'';
-	width:100%;
-	height: 100%;
-	background-color: grey;
-}
-.card-album:hover.card-album img{
+	transition: 0.6s;
 }
 .cart-service{
 	height: 600px;
+}
+.block-anh{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.card-album:hover.card-album img{
+	transform: scale(1.05);
+	transition: 0.6s;
+}
+.title-album:hover{
+	color:#FFA500;
+}
+.title-detail-album {
+	color: #135F74;
+	font-size: 27px;
+	font-weight: 500;
+}
+.main-image{
+	width:100%;
+	height:100%;
+	background-color: #F3E3B6;
+}
+.main-image img{
+	width:80%;
+	height:auto;
+	border-radius: 5px;
+}
+.decoration{
+	color:#135F74;
+}
+.decoration:hover{
+	color:#FCCF18;
+}
+.contact-album{
+	padding: 5px 0px !important;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.contact-album a{
+	color:white;
+	font-size: 20px;
+}
+.contact-album:nth-child(1){
+	background-color: #1978F2;
+}
+.contact-album:nth-child(2){
+	background-color: #1DA1F2;
+}
+.contact-album:nth-child(3){
+	background-color: #7348C3;
+}
+.contact-album:nth-child(4){
+	background-color: #DD4223;
+}
+.concept-layout-detail img{
+	width:100%;
 }
 /* end content */
 
