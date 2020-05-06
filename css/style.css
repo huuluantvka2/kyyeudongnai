@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0 !important;
 }
 html,
 body {
@@ -268,6 +269,176 @@ div.concept-layout a {
 	font-size: 18px;
 }
 /* end content */
+/*của Tô nha*/
+.btn-tertiary {
+  background: #ce9a0c;
+color: #fdffe8;
+}
+.flip-box {
+background-color: transparent;
+width: 49%;
+height: 300px;
+border: 1px solid #f1f1f1;
+display: inline-block;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-box-back p {
+text-align: left;  
+}
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+border: 0px solid white;
+}
+.khoi {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+.flip-box-front{
+width: 170px;
+height: 170px;
+padding: initial;
+background: #ccc;
+-moz-border-radius: 25px;
+-webkit-border-radius: 25px;
+--border-radius: 25px;
+border-radius: 25px;
+
+}
+.flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+.flip-box-front {
+background-color: #bbb;
+}
+.flip-box-back {
+background-color: rgba(57, 71, 69, 0.63);
+color: yellow;
+transform: rotateY(180deg);
+}
+
+.concept-detail {
+  width: 100%;
+  height: auto;
+  background: #FDFDFA;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.concept-detail-img {
+padding-top: 10px;
+  width: 45%;
+  height: 100%;
+}
+.concept-detail-img img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border: 3px solid #F3E3B6;
+}
+.concept-detail-text {
+  width: 54%;
+height: 100%;
+
+}
+.table-footer {
+padding-left: 5px;
+}
+.concept-detail-text button {
+  background: #DDDED0;
+  color: black;
+  border: none;
+  padding: 10px 30px;
+}
+div.layout-detail button, .content-table-header button, .concept-detail-text button {
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px #135F74 solid;
+  font-weight: bold;
+  color: white;
+  background: #135F74;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.iconkm {
+color:red;
+
+}
+
+/*responsive của tô*/
+@media (max-width: 800px){
+
+  .concept-detail {
+      width: 100%;
+      background: #FDFDFA;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+  }
+  .concept-detail-img {
+      width: 100%;
+      height: auto;
+  }
+  .concept-detail-text {
+      width: 100%;
+      height: auto;
+      text-align: left;
+  }
+  .concept-detail-text p {
+      padding-left: 0px;
+      font-size: 15px;
+  }
+  .concept-detail-text h4 {
+      text-align: center;
+      font-family: 'Merriweather', serif;
+  padding-left: 0%;
+  padding-top: 7px;
+  }
+  .concept-detail-img img {
+      width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+.concept-detail-text {
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+.concept-detail-text p {
+  padding-left: 0px;
+  font-size: 15px;
+}
+.concept-detail-text h4 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  padding-left: 0%;
+}
+}
+@media (max-width: 800px) {
+.flip-box { 
+  width: 100%;
+}
+}
 
 /* footer */
 .footer-icons a {
@@ -482,6 +653,7 @@ div.search-box {
     box-shadow: 0 0 20px #2fc01fd4;
   }
 }
+
 /* responsive */
 @media only screen and (max-width: 790px) {
   .header-above img {
@@ -502,4 +674,177 @@ div.search-box {
   .responsive-img {
     height: auto;
   }
+}
+/*của Tô nha*/
+.btn-tertiary {
+  background: #ce9a0c;
+color: #fdffe8;
+}
+.flip-box {
+background-color: transparent;
+width: 49%;
+height: 300px;
+border: 1px solid #f1f1f1;
+display: inline-block;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-box-back p {
+text-align: left;  
+}
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+border: 0px solid white;
+}
+.khoi {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+.flip-box-front{
+width: 170px;
+height: 170px;
+padding: initial;
+background: #ccc;
+-moz-border-radius: 25px;
+-webkit-border-radius: 25px;
+--border-radius: 25px;
+border-radius: 25px;
+
+}
+.flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+.flip-box-front {
+background-color: #bbb;
+}
+.flip-box-back {
+background-color: rgba(57, 71, 69, 0.63);
+color: yellow;
+transform: rotateY(180deg);
+}
+
+.concept-detail {
+  width: 100%;
+  height: auto;
+  background: #FDFDFA;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.concept-detail-img {
+padding-top: 10px;
+  width: 45%;
+  height: 100%;
+}
+.concept-detail-img img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border: 3px solid #F3E3B6;
+}
+.concept-detail-text {
+  width: 54%;
+height: 100%;
+
+}
+.table-footer {
+padding-left: 5px;
+}
+.concept-detail-text button {
+  background: #DDDED0;
+  color: black;
+  border: none;
+  padding: 10px 30px;
+}
+div.layout-detail button, .content-table-header button, .concept-detail-text button {
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px #135F74 solid;
+  font-weight: bold;
+  color: white;
+  background: #135F74;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.iconkm {
+color:red;
+
+}
+
+/*responsive của tô*/
+@media (max-width: 800px){
+
+  .concept-detail {
+      width: 100%;
+      background: #FDFDFA;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+  }
+  .concept-detail-img {
+      width: 100%;
+      height: auto;
+  }
+  .concept-detail-text {
+      width: 100%;
+      height: auto;
+      text-align: left;
+  }
+  .concept-detail-text p {
+      padding-left: 0px;
+      font-size: 15px;
+  }
+  .concept-detail-text h4 {
+      text-align: center;
+      font-family: 'Merriweather', serif;
+  padding-left: 0%;
+  padding-top: 7px;
+  }
+  .concept-detail-img img {
+      width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+.concept-detail-text {
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+.concept-detail-text p {
+  padding-left: 0px;
+  font-size: 15px;
+}
+.concept-detail-text h4 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  padding-left: 0%;
+}
+}
+@media (max-width: 800px) {
+.flip-box { 
+  width: 100%;
+}
+}
+.bold {
+  padding-top: 10px;
 }
